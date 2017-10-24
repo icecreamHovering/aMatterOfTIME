@@ -7,7 +7,7 @@
  const nowTime = (new Date()).getTime();
  //计算时间差               
  const lastTime = endTime - nowTime;
- //去的天数                                 60s  60min  24h
+ //去的天数                         1000ms  60s  60min  24h
  const day = Math.floor(lastTime / 1000 / 60 / 60 / 24);
  //取得小时数           
  const h = Math.floor(lastTime / 1000 / 60 / 60 % 24);
