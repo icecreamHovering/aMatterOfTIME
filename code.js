@@ -18,6 +18,17 @@
      his.btnTxt = this.validityTime = '已过期';
  }
 
+//日期格式化
+dateFormat(val) {
+  const time = val.split('-')
+  time.map((item, index) => {
+    if (item < 10) {
+      time[index] = '0' + item
+    }
+  })
+  return `${time[0]}-${time[1]}-${time[2]}`
+}
+
  
 //创建一个新日期对象Data不传参数创建的对象自动获得当前日期和时间
 var data = new Date();
