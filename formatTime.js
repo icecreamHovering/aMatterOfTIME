@@ -20,5 +20,6 @@ function formatNumber(n) {
 
 /*调用*/
 var time = formatTime(new Date());
+let val = 1514290306;
 let date = new Date(parseInt(val) * 1000);
 formatTime（date）；//时间戳转换为普通日期格式
